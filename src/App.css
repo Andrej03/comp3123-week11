@@ -1,38 +1,69 @@
-.App {
+.person-list-container {
+  padding: 20px;
+}
+
+#person-list-container {
+  background-color: white;
+  padding: 20px;
+}
+
+.title {
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title h1 {
+  color: white;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.person-card {
+  background-color: #0097a7;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.user-name-uuid {
+  background-color: #0097a7;
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
+}
+
+.person-content {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.person-image-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-right: 20px;
+}
+
+.person-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+
+.detailsbtn {
+  background-color: #0277bd;
+  border: none;
   color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.person-info {
+  flex: 1;
+  text-align: left;
 }
